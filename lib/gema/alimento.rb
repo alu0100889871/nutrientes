@@ -33,10 +33,10 @@ class Alimento
 		@lipidos    
 	end  
 
-	def get_alimento_formateado 
-		
-		@proteinas      
-
+	def get_valor_energetico   
+	
+		(@proteinas*4)+(@glucidos*4)+(@lipidos*9)   
+ 
 	end  
 end
 
