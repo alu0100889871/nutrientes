@@ -1,5 +1,3 @@
 require "lib/gema/alimento.rb"
-describe Dieta do
-
-
+describe Alimento do
 end
