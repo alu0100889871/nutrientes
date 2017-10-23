@@ -58,5 +58,8 @@ describe Alimento do
    		it "Se obtiene correctamente los lípidos del alimento mediante el método get_lipidos" do
    			expect(@food1.get_grasas).to eq(19.5)
   		end 
+   		it "Se obtiene correctamente el valor calórico del alimento" do
+   			expect(@food1.get_valor_energetico).to eq(231.9)
+  		end 
 	end
 end
