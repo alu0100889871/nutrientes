@@ -12,5 +12,31 @@ class Alimento
 		title= "\nAlimento:\n\n"
 		title+="#{@name}\t#{@proteinas}g\t#{@glucidos}g\t#{@lipidos}g"
 	end 
+
+	def get_name   
+     
+		@name    
+	end  
+
+	def get_proteinas   
+     
+		@proteinas    
+	end
+
+	def get_glucidos 
+      
+		@glucidos   
+	end    
+
+	def get_grasas      
+  
+		@lipidos    
+	end  
+
+	def get_alimento_formateado 
+		
+		@proteinas      
+
+	end  
 end
 
