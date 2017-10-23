@@ -40,4 +40,23 @@ describe Alimento do
   		end 
 
 	end
+
+	describe "# Existencia de los métodos de la clase Alimento" do
+
+   		it "Se realiza correctamente el to_s" do
+   			expect(@food1.to_s).to eq("\nAlimento:\n\nHuevo frito\t14.1g\t0.0g\t19.5g")
+  		end 
+   		it "Se obtiene correctamente el nombre del alimento mediante el método get_name" do
+   			expect(@food1.get_name).to eq("Huevo frito")
+  		end 
+   		it "Se obtiene correctamente las proteinas del alimento mediante el método get_proteinas" do
+   			expect(@food1.get_proteinas).to eq(14.1)
+  		end 
+   		it "Se obtiene correctamente los glúcidos del alimento mediante el método get_glucidos" do
+   			expect(@food1.get_glucidos).to eq(0.0)
+  		end 
+   		it "Se obtiene correctamente los lípidos del alimento mediante el método get_lipidos" do
+   			expect(@food1.get_grasas).to eq(19.5)
+  		end 
+	end
 end
