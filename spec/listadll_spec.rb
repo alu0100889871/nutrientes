@@ -20,6 +20,7 @@ describe Listadll do
 		it "#Se hace un push por delante" do 
 			expect(@lista.pushfront(12)).to eq(12)
 		end
+
 		it "#Se hace un push por detras" do 
 			expect(@lista.pushback(12)).to eq(12)
 		end
@@ -27,21 +28,25 @@ describe Listadll do
 		it "#Se pueden insertar varios elementos por delante" do
 			expect(@lista.pushfront([13,14,15])).to eq(15)
 		end
+
 		it "#Se pueden insertar varios elementos por detras" do
 			expect(@lista.pushback([13,14,15])).to eq(15)
 		end
- 
 	
 		it "#Debe existir una Lista con su cabecera" do
 			expect(@lista.head.value).to eq(15)
 		end
+
 		it "#Debe existir una Lista con su cola" do
 			expect(@lista.tail.value).to eq(15)
 		end	
 
-		it "#Se hace un pop por delante" do
+		it "#Se extrae el primer elemento de la Lista" do
 			expect(@lista.popfront).to eq(15)
+		end
 
+		it "#Se extrae el ́ultimo elemento de la Lista" do
+			expect(@lista.popback).to eq(15)
 		end
 		
 		
