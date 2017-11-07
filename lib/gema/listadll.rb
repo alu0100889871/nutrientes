@@ -9,27 +9,27 @@ class Listadll
 
     	def pushfront (valor)
 		if(valor.instance_of? Array )
-		if(@tail==nil)
-			@tail=Nodedll.new(valor[0],nil,nil)
-			@head = @tail
-			valor.shift()
-		end
-			for i in valor 
-				aux=@head
-	    			@head=Nodedll.new(i,aux,nil)
-				aux.next =@head
+			if(@tail==nil)
+				@tail=Nodedll.new(valor[0],nil,nil)
+				@head = @tail
+				valor.shift()
+			end
+				for i in valor 
+					aux=@head
+		    			@head=Nodedll.new(i,aux,nil)
+					aux.next =@head
+
+				end
+		else
+			if(@tail==nil)
+				@tail=Nodedll.new(valor,nil,nil)
+				@head = @tail
+			else
+				 aux = @head            
+				 @head = Nodo.new(valor,aux,nil)            
+				 aux.next = @head 
 
 			end
-		else
-		if(@tail==nil)
-			@tail=Nodedll.new(valor,nil,nil)
-			@head = @tail
-		else
-			 aux = @head            
-			 @head = Nodo.new(valor,aux,nil)            
-			 aux.next = @head 
-
-		end
 		end
 		@head.value
 		
