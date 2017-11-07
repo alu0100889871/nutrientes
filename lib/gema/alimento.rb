@@ -37,6 +37,5 @@ class Alimento
 	
 		(@proteinas*4)+(@glucidos*4)+(@lipidos*9)   
  
-	end  
+	end
 end
-
