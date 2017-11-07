@@ -39,3 +39,17 @@ class Alimento
  
 	end
 end
+	class Alimento_grupo < Alimento
+
+		attr_accessor :grupo
+		def initialize(alimento, grupo)
+			super(alimento.name, alimento.proteinas, alimento.glucidos, alimento.lipidos)
+			@grupo= grupo
+
+		end
+
+		def to_s
+
+			title = "\n#{@name}" + super.to_s 
+		end  
+	end
