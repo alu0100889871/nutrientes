@@ -1,12 +1,19 @@
 Nodedll = Struct.new(:value, :prev, :next)
 class Listadll
+include Enumerable
 
 	attr_accessor :head, :tail
  	def initialize
     		@head = nil
 		@tail = nil
 	end
-
+    	def each
+	 	node=@tail
+		while node != nil
+			yield node.value
+			node=node.next
+		end
+    	end
     	def pushfront (valor)
 		if(valor.instance_of? Array )
 			if(@tail==nil)
