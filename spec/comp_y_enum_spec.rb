@@ -91,6 +91,36 @@ describe Alimento do
 		end
 
 	end
+
+	describe "Enumerable con lista de alimentos" do
+		before :each do
+
+			@list=Listadll.new()
+			@list.pushfront([@food1, @food2 ,@food3 ,@food4, @food5])
+
+		end
+		it "#Se hacer correctamente min" do
+			expect(@list.min).to eq(@food2)
+		end
+		it "#Se hacer correctamente sort" do
+			expect(@list.sort).to eq([@food2, @food3 ,@food5 ,@food4, @food1])
+		end
+		it "#Se hacer correctamente max" do
+			expect(@list.max).to eq(@food1)
+		end
+		it "#Se hacer correctamente collect" do
+			expect(@list.collect{ |x| x.proteinas*2 }).to eq([28.2, 6.6, 7.6, 43.0, 42.2])
+
+		end
+		it "#Se hacer correctamente map" do
+			expect(@list.map { |x| x.get_valor_energetico }).to eq([231.9, 61.2, 69.0, 142.7, 112.30000000000001])
+		end
+		it "#Se hacer correctamente find" do
+			expect(@list.find{ |x| x==@food5 }).to eq(@food5)
+		end
+
+
+	end
 end
 
 
