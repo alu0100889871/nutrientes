@@ -63,6 +63,34 @@ describe Alimento do
 			expect(@food5.between?(@food2, @food1)).to eq(true)
 		end
 	end
+
+	describe "Enumerable con lista de numeros" do
+		before :all do
+
+			@list=Listadll.new()
+			@list.pushfront([1,12,18])
+
+		end
+		it "#Se hacer correctamente min" do
+			expect(@list.min).to eq(1)
+		end
+		it "#Se hacer correctamente sort" do
+			expect(@list.sort).to eq([1,12,18])
+		end
+		it "#Se hacer correctamente max" do
+			expect(@list.max).to eq(18)
+		end
+		it "#Se hacer correctamente collect" do
+			expect(@list.collect{ |x| x*x }).to eq([1, 144, 324 ])
+		end
+		it "#Se hacer correctamente map" do
+			expect(@list.map { |x| x*2  }).to eq([2, 24, 36])
+		end
+		it "#Se hacer correctamente find" do
+			expect(@list.find{ |x| x==18 }).to eq(18)
+		end
+
+	end
 end
 
 
