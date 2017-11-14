@@ -1,2 +1,2 @@
-describe Comp_y_enum do
+class Comp_y_enum
 end
