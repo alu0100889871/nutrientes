@@ -1,6 +1,6 @@
-#TDD Lista doblemente enlazada
+#TDD Instancias comparables y enumerables
 ================
 
-Desarrollo Dirigido por Pruebas para la clase Lista doblemente enlazada
+Desarrollo Dirigido por Pruebas para representar Alimentos. Hacer que sus instancias sean comparables y enumerables.
 
 Victoria Quintana Martí
