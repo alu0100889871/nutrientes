@@ -48,19 +48,19 @@ describe Alimento do
 
 	describe "Comparable con Alimento" do
 		it "#Se hacer correctamente el >" do
-			expect(@food1 > @food2).to eq(true)
+			expect(@food1 > @food4).to eq(true)
 		end
 		it "#Se hacer correctamente el >=" do
-			expect(@food1 >= @food2).to eq(true)
+			expect(@food1 >= @food5).to eq(true)
 		end
 		it "#Se hacer correctamente el <" do
-			expect(@food5 < @food4).to eq(false)
+			expect(@food2 < @food5).to eq(true)
 		end
 		it "#Se hacer correctamente el <=" do
-			expect(@food5 <= @food3).to eq(true)
+			expect(@food5 <= @food3).to eq(false)
 		end
 		it "#Se hacer correctamente el entre dos valores" do
-			expect(@food5.between?(@food2, @food3)).to eq(true)
+			expect(@food5.between?(@food2, @food1)).to eq(true)
 		end
 	end
 end
