@@ -1,0 +1,19 @@
+Tue, 14 Nov 2017 19:52:45 +0000
+./bin/setup	Mon, 23 Oct 2017 20:38:12 +0100
+./bin/console	Mon, 23 Oct 2017 20:38:12 +0100
+./README.md	Tue, 14 Nov 2017 18:16:19 +0000
+./spec/comp_y_enum_spec.rb	Tue, 14 Nov 2017 19:33:26 +0000
+./spec/spec_helper.rb	Mon, 23 Oct 2017 20:38:12 +0100
+./spec/alimento_spec.rb	Mon, 23 Oct 2017 23:51:26 +0100
+./spec/listadll_spec.rb	Wed, 08 Nov 2017 13:55:02 +0000
+./spec/gema_spec.rb	Mon, 23 Oct 2017 20:38:12 +0100
+./LICENSE.txt	Tue, 24 Oct 2017 11:43:27 +0100
+./Rakefile	Tue, 14 Nov 2017 18:22:52 +0000
+./lib/gema/listadll.rb	Tue, 14 Nov 2017 19:46:36 +0000
+./lib/gema/version.rb	Tue, 14 Nov 2017 19:48:33 +0000
+./lib/gema/alimento.rb	Tue, 14 Nov 2017 19:44:59 +0000
+./lib/gema.rb	Mon, 23 Oct 2017 20:38:12 +0100
+./Gemfile	Mon, 23 Oct 2017 20:38:12 +0100
+./Gemfile.lock	Mon, 06 Nov 2017 17:03:04 +0000
+./Guardfile	Mon, 06 Nov 2017 17:10:48 +0000
+./gema.gemspec	Tue, 14 Nov 2017 18:18:19 +0000
