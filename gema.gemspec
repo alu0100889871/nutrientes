@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Victoria Quintana"]
   spec.email         = ["alu0100889871@ull.edu.es"]
 
-  spec.summary       = %q{Practica 8 LPP}
-  spec.description   = %q{Hacer la jerarquía de clases en Ruby para representar Alimentos que tengan instancias que sean comparables y enumerables, dirigido por pruebas TDD a través de RSpec(expectativa). Para crear la estructura utilizamos Bundler.}
+  spec.summary       = %q{Practica 9 LPP}
+  spec.description   = %q{Uso de paradigma de programacion funcional}
   spec.homepage      = "https://github.com/ULL-ESIT-LPP-1718/tdd-alu0100889871"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

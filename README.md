@@ -1,6 +1,6 @@
-#TDD Instancias comparables y enumerables
+#LPP: Práctica 09
 ================
 
-Desarrollo Dirigido por Pruebas para representar Alimentos. Hacer que sus instancias sean comparables y enumerables.
+Uso del paradigma de la programación funcional
 
 Victoria Quintana Martí
