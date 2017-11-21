@@ -17,9 +17,14 @@ desc "Ejecutar las espectativas para que los menús sean comparables y enumerabl
 task :spec do
   sh "rspec -I. spec/comp_y_enum_spec.rb"
 end
+desc "Ejecutar las espectativas de programacion funcional"
+task :spec do
+  sh "rspec -I. spec/alimento2_spec.rb"
+end
 
 desc "Ejecutar con documentacion"
 task :doc do
   sh "rspec -I. spec/alimento_spec.rb --format documentation"
 end
+
 
