@@ -13,8 +13,8 @@ describe Alimento2 do
 		@individuos = [[@alimento1_1, @alimento1_2, @alimento1_3],[@alimento2_1, @alimento2_2, @alimento2_3]]
 	end
 
-	describe "# Existencia de los métodos de Alimento" do
-   		it "Se realiza correctamente el aibc_alim" do
+	describe "Existencia de los métodos de Alimento" do
+   		it "#Se realiza correctamente el aibc_alim" do
    			expect(@individuos[0][0].aibc_alim).to eq(28.249999999999993)
   		end 
 	
