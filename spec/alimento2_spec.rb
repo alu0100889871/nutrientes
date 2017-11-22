@@ -17,6 +17,9 @@ describe Alimento2 do
    		it "#Se realiza correctamente el aibc_alim" do
    			expect(@individuos[0][0].aibc_alim).to eq(28.249999999999993)
   		end 
+   		it "#Se realiza correctamente el aibc_glucosa" do
+   			expect(@individuos[0][0].aibc_glucosa(@glucosa1)).to eq(251.5)
+  		end 
 	
 	end
 end
