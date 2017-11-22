@@ -20,6 +20,13 @@ describe Alimento2 do
    		it "#Se realiza correctamente el aibc_glucosa" do
    			expect(@individuos[0][0].aibc_glucosa(@glucosa1)).to eq(251.5)
   		end 
+   		it "#Se realiza correctamente el indice glucemico de Compota de manzana" do
+			div = (0...@individuos.length).map{|i| @individuos[i][0].aibc_alim/@individuos[i][0].aibc_glucosa(@glucosa1)}
+			mult = (0...div.length).map{|i| div[i]*100}
+			div2 = (0...mult.length).map{|i| mult[i]/2}
+			manzana = div2.reduce('+')
+			expect(manzana).to eq(41.50099403578528)	
+  		end
 	
 	end
 end
