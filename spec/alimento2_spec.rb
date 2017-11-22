@@ -32,6 +32,13 @@ describe Alimento2 do
 			yogurt = div2.reduce('+')
 			expect(yogurt).to eq(39.46044872141986)	
   		end
+   		it "#Se realiza correctamente el indice glucemico de Chocolate" do
+			div = (0...@individuos.length).map{|i| @individuos[i][2].aibc_alim/@individuos[i][2].aibc_glucosa(@glucosa[i])}
+			mult = (0...div.length).map{|i| div[i]*100}
+			div2 = (0...mult.length).map{|i| mult[i]/2}
+			chocolate = div2.reduce('+')
+			expect(chocolate).to eq(12.805398478132512)	
+  		end
 	
 	end
 end
