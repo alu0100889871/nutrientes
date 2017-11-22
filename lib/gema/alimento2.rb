@@ -58,6 +58,14 @@ include Comparable
 		aux3 = (1..aux2.length-1).map{|i| aux2[i]*5}
 		final =aux3.reduce('+')
 	end
+	#Método para el area incremental bajo la curva de la glucosa
+	def aibc_glucosa(gluc)
+		glucosa = gluc
+		aux1 = (1..glucosa.length-1).map{|i|(glucosa[i] - glucosa[0]) + (glucosa[i-1] - glucosa[0])}
+		aux2 = (1..aux1.length-1).map{|i| aux1[i]/2}
+		aux3 = (1..aux2.length-1).map{|i| aux2[i]*5}
+		final =aux3.reduce('+')
+	end
 end
 	#Clase Alimento_grupo que recibe herencia de la clase Alimento
 	class Alimento_grupo < Alimento2
