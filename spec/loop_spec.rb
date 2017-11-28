@@ -54,6 +54,27 @@ describe Alimento do
 			expect(aux).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
 		end
 		it "#Se realiza correctamente el each" do
+			aux2=[]
+			indice2=-1
+			@array.each do |i|
+			    if(aux2.empty? == true) 
+				aux2 << i
+			    else
+				aux2.each_with_index do |val,index|
+					indice2=-1
+				    if(i < val)
+				        indice2=index
+				        break
+				        
+				    end
+				end
+				if(indice2 == -1)
+				    aux2 << i
+				else 
+				    aux2.insert(indice2, i)
+				end
+			    end
+		    	end
 			expect(aux2).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
 		end
 	end
