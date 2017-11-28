@@ -77,5 +77,8 @@ describe Alimento do
 		    	end
 			expect(aux2).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
 		end
+		it "#Se realiza correctamente el sort" do
+			expect(@array.sort).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
+		end
 	end
 end
