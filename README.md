@@ -1,4 +1,4 @@
-#LPP: Práctica 09
+#LPP: Práctica 10
 ================
 
 Uso del paradigma de la programación funcional
