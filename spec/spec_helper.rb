@@ -1,6 +1,6 @@
 require "coveralls"
 require "bundler/setup"
-require "point"
+require "gema"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
