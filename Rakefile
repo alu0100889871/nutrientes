@@ -22,6 +22,11 @@ task :spec do
   sh "rspec -I. spec/alimento2_spec.rb"
 end
 
+desc "Ejecutar las espectativas de programacion funcional 2"
+task :spec do
+  sh "rspec -I. spec/loop_spec.rb"
+end
+
 desc "Ejecutar con documentacion"
 task :doc do
   sh "rspec -I. spec/alimento_spec.rb --format documentation"
