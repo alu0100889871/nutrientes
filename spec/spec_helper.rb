@@ -2,6 +2,8 @@ require "coveralls"
 require "bundler/setup"
 require "gema"
 
+Coveralls.wear!
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = ".rspec_status"
@@ -13,5 +15,3 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
-
-Coveralls.wear!
