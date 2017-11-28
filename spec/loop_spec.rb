@@ -29,6 +29,28 @@ describe Alimento do
 	end
 	describe "For, each y sort" do
    		it "#Se realiza correctamente el for" do
+			aux=[]
+			indice=-1
+			for i in 0..@array.length-1
+			    if(aux.empty? == true) 
+				aux << @array[i]
+			    else
+				for j in 0..aux.length-1
+					indice=-1
+				    if(@array[i] < aux[j])
+				        indice=j
+				        break
+				    end
+				end
+				   
+				if(indice == -1)
+				    aux << @array[i]
+				else 
+				    aux.insert(indice, @array[i])
+				end
+			    end
+				
+			end
 			expect(aux).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
 		end
 	end
