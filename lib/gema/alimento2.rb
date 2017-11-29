@@ -1,4 +1,3 @@
-require "spec_helper"
 #Clase Alimento
 class Alimento2
 #Include Comparable
