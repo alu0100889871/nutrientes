@@ -1,4 +1,5 @@
 require "lib/gema/alimento.rb"
+require 'benchmark'
 describe Alimento do
 	before :all do      
 		@food1 = Alimento.new("Huevo frito", 14.1, 0.0, 19.5)
@@ -27,58 +28,70 @@ describe Alimento do
 		
 	end
 	describe "For, each y sort" do
-   		it "#Se realiza correctamente el for" do
-			aux=[]
-			indice=-1
-			for i in 0..@array.length-1
-			    if(aux.empty? == true) 
-				aux << @array[i]
-			    else
-				for j in 0..aux.length-1
+		Benchmark.bm do |x|
+			x.report("for:")   {
+		   		it "#Se realiza correctamente el for" do
+					aux=[]
 					indice=-1
-				    if(@array[i] < aux[j])
-				        indice=j
-				        break
-				    end
-				end
-				   
-				if(indice == -1)
-				    aux << @array[i]
-				else 
-				    aux.insert(indice, @array[i])
-				end
-			    end
+					for i in 0..@array.length-1
+					    if(aux.empty? == true) 
+						aux << @array[i]
+					    else
+						for j in 0..aux.length-1
+							indice=-1
+						    if(@array[i] < aux[j])
+							indice=j
+							break
+						    end
+						end
+						   
+						if(indice == -1)
+						    aux << @array[i]
+						else 
+						    aux.insert(indice, @array[i])
+						end
+					    end
 				
-			end
-			expect(aux).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
-		end
-		it "#Se realiza correctamente el each" do
-			aux2=[]
-			indice2=-1
-			@array.each do |i|
-			    if(aux2.empty? == true) 
-				aux2 << i
-			    else
-				aux2.each_with_index do |val,index|
+					end
+					expect(aux).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
+
+				end
+			}
+			x.report("each:")   {	
+				it "#Se realiza correctamente el each" do
+					aux2=[]
 					indice2=-1
-				    if(i < val)
-				        indice2=index
-				        break
-				        
-				    end
+					@array.each do |i|
+					    if(aux2.empty? == true) 
+						aux2 << i
+					    else
+						aux2.each_with_index do |val,index|
+							indice2=-1
+						    if(i < val)
+							indice2=index
+							break
+						
+						    end
+						end
+						if(indice2 == -1)
+						    aux2 << i
+						else 
+						    aux2.insert(indice2, i)
+						end
+					    end
+				    	end
+					expect(aux2).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
+
 				end
-				if(indice2 == -1)
-				    aux2 << i
-				else 
-				    aux2.insert(indice2, i)
+			}
+			x.report("sort:")   {
+			it "#Se realiza correctamente el sort" do
+					aux3=@array.sort
+					expect(aux3).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
+		
 				end
-			    end
-		    	end
-			expect(aux2).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
-		end
-		it "#Se realiza correctamente el sort" do
-			aux3=@array.sort
-			expect(aux3).to eq([@food16,@food21, @food17, @food18, @food22, @food2, @food3, @food15, @food7, @food19, @food5, @food6, @food4, @food9, @food8, @food1, @food14, @food13, @food11, @food12, @food20, @food10])	
-		end
+			}
+		end	
 	end
+
 end
