@@ -1,4 +1,5 @@
 require "lib/gema/alimento.rb"
+require "spec_helper"
 require 'benchmark'
 describe Alimento do
 	before :all do      
