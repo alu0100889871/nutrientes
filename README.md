@@ -7,7 +7,7 @@ Victoria Quintana Martí
 
 Travis añadido privadoo
 
-Añadiendo coverallss
+Añadiendo coveralls
 
 [![Coverage Status](https://coveralls.io/repos/github/alu0100889871/nutrientes/badge.svg?branch=master)](https://coveralls.io/github/alu0100889871/nutrientes?branch=master)
 
