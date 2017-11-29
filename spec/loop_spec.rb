@@ -1,4 +1,4 @@
-require "/lib/gema/alimento.rb"
+require "./lib/gema/alimento.rb"
 require "spec_helper"
 require 'benchmark'
 describe Alimento do

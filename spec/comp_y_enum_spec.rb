@@ -1,5 +1,5 @@
-require "/lib/gema/alimento.rb"
-require "/lib/gema/listadll.rb"
+require "./lib/gema/alimento.rb"
+require "./lib/gema/listadll.rb"
 describe Alimento do
 	before :all do
 		@food1 = Alimento.new("Huevo frito", 14.1, 0.0, 19.5)
