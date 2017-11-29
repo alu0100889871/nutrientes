@@ -1,7 +1,6 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
-require 'coveralls/rake/task'
-Coveralls::RakeTask.new
+
 task :default => :spec
 
 desc "Ejecutar las espectativas de la clase "
@@ -32,4 +31,6 @@ desc "Ejecutar con documentacion"
 task :doc do
   sh "rspec -I. spec/alimento_spec.rb --format documentation"
 end
+require 'coveralls/rake/task'
+Coveralls::RakeTask.new
 
