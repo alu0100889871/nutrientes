@@ -1,4 +1,4 @@
-require "spec_helper"
+require "./spec/spec_helper"
 
 RSpec.describe Gema do
   it "has a version number" do

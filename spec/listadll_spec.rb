@@ -1,6 +1,6 @@
 require "./lib/gema/alimento.rb"
 require "./lib/gema/listadll.rb"
-require "spec_helper"
+require "./spec/spec_helper"
 describe Listadll do
 
 	before :all do
