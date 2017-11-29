@@ -1,6 +1,6 @@
-require "lib/gema/alimento.rb"
-require "lib/gema/listadll.rb"
-
+require "/home/victoria/LPP17-18/practicaLPP/lib/gema/alimento.rb"
+require "/home/victoria/LPP17-18/practicaLPP/lib/gema/listadll.rb"
+require "spec_helper"
 describe Listadll do
 
 	before :all do

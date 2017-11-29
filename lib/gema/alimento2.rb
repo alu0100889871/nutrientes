@@ -68,7 +68,7 @@ include Comparable
 	end
 end
 	#Clase Alimento_grupo que recibe herencia de la clase Alimento
-	class Alimento_grupo < Alimento2
+	class Alimento_grupo2 < Alimento2
 		#Grupo del alimento
 		attr_accessor :grupo
 		#Constructor 
