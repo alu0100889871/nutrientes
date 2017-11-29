@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Victoria Quintana"]
   spec.email         = ["alu0100889871@ull.edu.es"]
 
-  spec.summary       = %q{Practica 10 LPP}
-  spec.description   = %q{Uso de paradigma de programacion funcional}
+  spec.summary       = %q{"Practica 10 LPP2"}
+  spec.description   = %q{"Uso de paradigma de programacion funcional"}
   spec.homepage      = "https://github.com/ULL-ESIT-LPP-1718/tdd-alu0100889871"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
