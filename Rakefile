@@ -31,6 +31,5 @@ desc "Ejecutar con documentacion"
 task :doc do
   sh "rspec -I. spec/alimento_spec.rb --format documentation"
 end
-require 'coveralls/rake/task'
-Coveralls::RakeTask.new
+
 
