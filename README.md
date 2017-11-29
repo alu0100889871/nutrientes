@@ -11,5 +11,5 @@ Añadiendo coverallss
 
 [![Coverage Status](https://coveralls.io/repos/github/alu0100889871/nutrientes/badge.svg?branch=master)](https://coveralls.io/github/alu0100889871/nutrientes?branch=master)
 
-https://travis-ci.org/alu0100889871/nutrientes.svg?branch=master
+https://travis-ci.org/alu0100889871/nutrientes
 
