@@ -28,7 +28,7 @@ describe Alimento do
 	describe "# Existencia de las características del Alimento" do
 
    		it "Se almacena correctamente el nombre del alimento" do
-   			expect(@food1.name).to eq("Huevo frito")
+   			expect(@food1.name).to e("Huevo frito")
   		end 
    		it "Se almacena correctamente las proteínas del alimento" do
    			expect(@food1.proteinas).to eq(14.1)
