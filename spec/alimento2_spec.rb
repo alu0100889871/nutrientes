@@ -1,4 +1,4 @@
-require "/home/victoria/LPP17-18/practicaLPP/lib/gema/alimento2.rb"
+require "/lib/gema/alimento2.rb"
 require "spec_helper"
 describe Alimento2 do 
 	before :each do 

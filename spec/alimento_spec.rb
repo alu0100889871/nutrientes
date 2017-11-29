@@ -1,4 +1,4 @@
-require "/home/victoria/LPP17-18/practicaLPP/lib/gema/alimento.rb"
+require "/lib/gema/alimento.rb"
 
 require "spec_helper"
 describe Alimento do
